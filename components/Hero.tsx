@@ -20,13 +20,13 @@ const Hero = () => {
         </h1>
         <p className="text-base sm:text-lg md:text-xl mb-6">
           I&#39;m a Junior Front-End Developer who enjoys building websites that
-          look good and work well. I&#39;m still learning, but I&#39;m always
-          improving and trying out new things.
+          look good and work well. I&#39;m continually developing my skills and
+          staying current with evolving web technologies.
         </p>
         <p className="text-base sm:text-lg md:text-xl mb-6">
-          I mostly work with HTML, CSS, JavaScript, and React. I’ve also used
-          tools like Tailwind CSS, Git, and Figma to help bring my projects to
-          life.
+          I mostly work with HTML, CSS, JavaScript, React, Node.js, and Next.js.
+          I’ve also used tools like Tailwind CSS, Git, and Figma to help bring
+          my projects to life.
         </p>
         <p className="text-base sm:text-lg md:text-xl mb-8">
           I&#39;m open to internships and freelance work — feel free to reach
@@ -40,9 +40,9 @@ const Hero = () => {
             View My Projects
           </a>
           <a
-            href="/resume.pdf"
+            href="/Matthew-Sabeta-Resume.pdf"
+            download="Matthew-Sabeta-Resume.pdf"
             className="px-5 py-3 bg-[#58a6ff] text-[#0d1117] font-bold rounded-md hover:bg-[#3a75d1] transition-colors"
-            download
           >
             Download Resume
           </a>
