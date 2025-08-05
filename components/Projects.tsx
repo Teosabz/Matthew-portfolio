@@ -11,17 +11,19 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Start Bootstrap",
-    description: "A simple React to-do list with local storage support.",
-    imageUrl: "/assets/boot.jpeg",
-    link: "https://teosabs.github.io/START-BOOTSTRAP-REACT/",
+    title: "My Portfolio",
+    description: "My personal portfolio built using React.js and Next.js.",
+    imageUrl: "/assets/portfolio.jpeg",
+    link: "https://matthew-portfolio-git-main-matthew-sabetas-projects.vercel.app?_vercel_share=gHNsENAvKQgORjXYf43FYAhkjbh97miI",
   },
   {
     id: 3,
-    title: "My Portfolio",
-    description: "My personal portfolio built using React.js",
-    imageUrl: "/assets/portfolio.jpeg",
-    link: "#",
+    title: "Baker's Inn Website",
+    description:
+      "A responsive clone of the Baker’s Inn homepage built with Next.js and Tailwind CSS. Includes dynamic sections, animations, and optimized images.",
+    imageUrl:
+      "/assets/imgi_22_360101446_621081670158184_3000966430470798433_n.png", // make sure this exists in your public/assets folder
+    link: "https://bakers-inn-project-mf74-git-main-matthew-sabetas-projects.vercel.app?_vercel_share=t2ejMXbaVtHljGA3TAbGfduS7vFAuLR8", // replace with your actual URL
   },
 ];
 
