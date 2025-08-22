@@ -40,7 +40,7 @@ const projectsData = [
       "A responsive clone of the Baker’s Inn homepage built with Next.js and Tailwind CSS. Includes dynamic sections, animations, and optimized images.",
     imageUrl:
       "/assets/imgi_22_360101446_621081670158184_3000966430470798433_n.png",
-    link: "https://bakers-inn-project-mf74-git-main-matthew-sabetas-projects.vercel.app?_vercel_share=t2ejMXbaVtHljGA3TAbGfduS7vFAuLR8",
+    link: "https://bakers-inn-project.vercel.app/",
     type: "project",
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
