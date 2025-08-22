@@ -1,8 +1,4 @@
 import React from "react";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import Image from "next/image";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import backgroundImage from "../public/assets/image.jpg"; // move the image to public/assets/
 
 const Hero = () => {
   return (
@@ -18,20 +14,39 @@ const Hero = () => {
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#58a6ff] mb-6">
           Hi, I&#39;m Matthew Sabeta
         </h1>
-        <p className="text-base sm:text-lg md:text-xl mb-6">
-          I&#39;m a Junior Front-End Developer who enjoys building websites that
-          look good and work well. I&#39;m continually developing my skills and
-          staying current with evolving web technologies.
+
+        {/* Improved paragraphs */}
+        <p className="text-base sm:text-lg md:text-xl mb-6 leading-relaxed max-w-3xl mx-auto text-[#c9d1d9]/90">
+          I&#39;m a{" "}
+          <span className="text-[#58a6ff] font-semibold">
+            Software Developer
+          </span>{" "}
+          who enjoys building websites that look great and work seamlessly. I
+          focus on creating projects that are both visually appealing and
+          performant.
         </p>
-        <p className="text-base sm:text-lg md:text-xl mb-6">
-          I mostly work with HTML, CSS, JavaScript, React, Node.js, and Next.js.
-          I’ve also used tools like Tailwind CSS, Git, and Figma to help bring
-          my projects to life.
+
+        <p className="text-base sm:text-lg md:text-xl mb-6 leading-relaxed max-w-3xl mx-auto text-[#c9d1d9]/90">
+          I mainly work with{" "}
+          <span className="text-[#61dafb] font-semibold">HTML</span>,{" "}
+          <span className="text-[#f7df1e] font-semibold">JavaScript</span>,{" "}
+          <span className="text-[#1572b6] font-semibold">CSS</span>,{" "}
+          <span className="text-[#61dafb] font-semibold">React</span>,{" "}
+          <span className="text-[#339933] font-semibold">Node.js</span>, and{" "}
+          <span className="text-white font-semibold">Next.js</span>. I also use
+          tools like{" "}
+          <span className="text-[#38bdf8] font-semibold">Tailwind CSS</span>,{" "}
+          <span className="text-[#f05032] font-semibold">Git</span>, and{" "}
+          <span className="text-[#f24e1e] font-semibold">Figma</span>.
         </p>
-        <p className="text-base sm:text-lg md:text-xl mb-8">
-          I&#39;m open to internships and freelance work — feel free to reach
-          out!
+
+        <p className="text-base sm:text-lg md:text-xl mb-8 leading-relaxed max-w-3xl mx-auto text-[#c9d1d9]/90">
+          I&#39;m open to{" "}
+          <span className="text-[#58a6ff] font-semibold">internships</span> and{" "}
+          <span className="text-[#58a6ff] font-semibold">freelance work</span> —
+          feel free to reach out and collaborate on exciting projects!
         </p>
+
         <div className="flex flex-wrap justify-center gap-4">
           <a
             href="#projects"

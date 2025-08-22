@@ -1,4 +1,6 @@
 import React from "react";
+import { FaReact, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 const projectsData = [
   {
@@ -8,6 +10,12 @@ const projectsData = [
       "A personal portfolio built with HTML, CSS and JavaScript. Fully responsive and clean UI.",
     imageUrl: "/assets/tigzozo-media.jpg",
     link: "https://teosabs.github.io/Tigzozo-media/",
+    type: "project",
+    tech: [
+      { icon: <FaHtml5 />, color: "#E34F26" },
+      { icon: <FaCss3Alt />, color: "#1572B6" },
+      { icon: <FaJs />, color: "#F7DF1E" },
+    ],
   },
   {
     id: 2,
@@ -15,6 +23,11 @@ const projectsData = [
     description: "My personal portfolio built using React.js and Next.js.",
     imageUrl: "/assets/portfolio.jpeg",
     link: "https://matthew-portfolio-git-main-matthew-sabetas-projects.vercel.app?_vercel_share=gHNsENAvKQgORjXYf43FYAhkjbh97miI",
+    type: "project",
+    tech: [
+      { icon: <FaReact />, color: "#61DAFB" },
+      { icon: <SiNextdotjs />, color: "#FFFFFF" },
+    ],
   },
   {
     id: 3,
@@ -22,13 +35,38 @@ const projectsData = [
     description:
       "A responsive clone of the Baker’s Inn homepage built with Next.js and Tailwind CSS. Includes dynamic sections, animations, and optimized images.",
     imageUrl:
-      "/assets/imgi_22_360101446_621081670158184_3000966430470798433_n.png", // make sure this exists in your public/assets folder
-    link: "https://bakers-inn-project-mf74-git-main-matthew-sabetas-projects.vercel.app?_vercel_share=t2ejMXbaVtHljGA3TAbGfduS7vFAuLR8", // replace with your actual URL
+      "/assets/imgi_22_360101446_621081670158184_3000966430470798433_n.png",
+    link: "https://bakers-inn-project-mf74-git-main-matthew-sabetas-projects.vercel.app?_vercel_share=t2ejMXbaVtHljGA3TAbGfduS7vFAuLR8",
+    type: "project",
+    tech: [
+      { icon: <SiNextdotjs />, color: "#FFFFFF" },
+      { icon: <SiTailwindcss />, color: "#06B6D4" },
+    ],
+  },
+  {
+    id: 4,
+    title: "Coming Soon",
+    description: "More projects on the way!",
+    videoUrl: "/assets/coming-soon.mp4",
+    type: "comingSoon",
+  },
+  {
+    id: 5,
+    title: "Coming Soon",
+    description: "More projects on the way!",
+    videoUrl: "/assets/coming-soon.mp4",
+    type: "comingSoon",
+  },
+  {
+    id: 6,
+    title: "Coming Soon",
+    description: "More projects on the way!",
+    videoUrl: "/assets/coming-soon.mp4",
+    type: "comingSoon",
   },
 ];
 
 const Projects = () => {
-  // Common hover classes for all cards
   const hoverEffectClasses =
     "transform transition-transform hover:-translate-y-1.5 hover:shadow-[#58a6ff]/60";
 
@@ -38,61 +76,97 @@ const Projects = () => {
       className="py-16 px-4 sm:px-6 md:px-8 bg-[#0d1117] text-[#c9d1d9] text-center"
     >
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl text-[#58a6ff] mb-8 font-bold">
+        <h2 className="text-3xl sm:text-4xl text-[#58a6ff] mb-12 font-bold">
           My Projects
         </h2>
 
-        {/* Row 1 - Image background project cards */}
-        <div className="flex flex-wrap justify-center gap-6 sm:gap-8 mb-8">
-          {projectsData.map(({ id, title, description, imageUrl, link }) => (
-            <a
-              key={id}
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`relative w-full max-w-[280px] h-[320px] rounded-xl shadow-lg shadow-[#58a6ff]/30 overflow-hidden flex flex-col justify-end bg-cover bg-center ${hoverEffectClasses}`}
-              style={{ backgroundImage: `url(${imageUrl})` }}
-            >
-              <div className="bg-[#0d1117]/70 p-5 sm:p-6 flex flex-col justify-between h-full text-left">
-                <h3 className="text-[#58a6ff] text-xl mb-2 font-semibold">
-                  {title}
-                </h3>
-                <p className="text-[0.95rem] leading-relaxed flex-grow">
-                  {description}
-                </p>
-                <span className="mt-4 text-[#58a6ff] font-bold underline">
-                  View Project
-                </span>
-              </div>
-            </a>
-          ))}
-        </div>
-
-        {/* Row 2 - Video "Coming Soon" cards */}
-        <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
-          {[...Array(3)].map((_, i) => (
-            <div
-              key={i}
-              className={`relative w-full max-w-[280px] h-[320px] rounded-xl overflow-hidden bg-black shadow-lg shadow-[#58a6ff]/30 ${hoverEffectClasses}`}
-            >
-              <video
-                src="/assets/coming-soon.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover block rounded-xl"
-              />
-              <div className="absolute inset-0 bg-[#0d1117]/60 flex flex-col justify-center items-center text-center p-4 text-[#c9d1d9]">
-                <h3 className="text-[#58a6ff] text-xl mb-2 font-semibold">
-                  Coming Soon
-                </h3>
-                <p className="text-base m-0">More projects on the way!</p>
-              </div>
-            </div>
-          ))}
+        {/* Projects Grid - 3 top + 3 bottom */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projectsData.map(
+            ({
+              id,
+              title,
+              description,
+              imageUrl,
+              link,
+              videoUrl,
+              type,
+              tech,
+            }) =>
+              type === "project" ? (
+                <a
+                  key={id}
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`relative h-[320px] rounded-xl shadow-lg shadow-[#58a6ff]/30 overflow-hidden flex flex-col justify-end bg-cover bg-center ${hoverEffectClasses}`}
+                  style={{ backgroundImage: `url(${imageUrl})` }}
+                >
+                  <div className="bg-[#0d1117]/70 p-5 sm:p-6 flex flex-col justify-between h-full text-left">
+                    <h3 className="text-[#58a6ff] text-xl mb-2 font-semibold">
+                      {title}
+                    </h3>
+                    <p className="text-[0.95rem] leading-relaxed flex-grow">
+                      {description}
+                    </p>
+                    {/* Tech Icons with Bounce Animation */}
+                    <div className="flex gap-3 mt-3 flex-wrap">
+                      {tech &&
+                        tech.map((t, i) => (
+                          <span
+                            key={i}
+                            className="text-lg inline-block animate-bounce-on-hover"
+                            style={{ color: t.color }}
+                          >
+                            {t.icon}
+                          </span>
+                        ))}
+                    </div>
+                    <span className="mt-4 text-[#58a6ff] font-bold underline">
+                      View Project
+                    </span>
+                  </div>
+                </a>
+              ) : (
+                <div
+                  key={id}
+                  className={`relative h-[320px] rounded-xl overflow-hidden bg-black shadow-lg shadow-[#58a6ff]/30 ${hoverEffectClasses}`}
+                >
+                  <video
+                    src={videoUrl}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover block rounded-xl"
+                  />
+                  <div className="absolute inset-0 bg-[#0d1117]/60 flex flex-col justify-center items-center text-center p-4 text-[#c9d1d9]">
+                    <h3 className="text-[#58a6ff] text-xl mb-2 font-semibold">
+                      {title}
+                    </h3>
+                    <p className="text-base m-0">{description}</p>
+                  </div>
+                </div>
+              )
+          )}
         </div>
       </div>
+
+      {/* Tailwind custom keyframes */}
+      <style jsx global>{`
+        @keyframes bounceOnHover {
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-5px);
+          }
+        }
+        .animate-bounce-on-hover:hover {
+          animation: bounceOnHover 0.4s ease;
+        }
+      `}</style>
     </section>
   );
 };
