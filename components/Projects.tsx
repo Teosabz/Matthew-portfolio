@@ -1,5 +1,5 @@
 import React from "react";
-import { FaReact, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNodeJs } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 const projectsData = [
@@ -19,16 +19,20 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "My Portfolio",
-    description: "My personal portfolio built using React.js and Next.js.",
-    imageUrl: "/assets/portfolio.jpeg",
-    link: "https://matthew-portfolio-git-main-matthew-sabetas-projects.vercel.app?_vercel_share=gHNsENAvKQgORjXYf43FYAhkjbh97miI",
+    title: "Whispers-Of-Yore",
+    description:
+      "A folktale app built using Next.js, Tailwind CSS, and Node.js, featuring story browsing, filtering, and user interactions.",
+    imageUrl: "/assets/w-o-y.png", // replace with actual cover image if you have one
+    link: "https://your-whispers-of-yore-link.vercel.app", // replace with the live URL
     type: "project",
     tech: [
       { icon: <FaReact />, color: "#61DAFB" },
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
+      { icon: <SiTailwindcss />, color: "#38BDF8" },
+      { icon: <FaNodeJs />, color: "#339933" },
     ],
   },
+
   {
     id: 3,
     title: "Baker's Inn Website",
