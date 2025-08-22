@@ -80,8 +80,8 @@ const Projects = () => {
           My Projects
         </h2>
 
-        {/* Projects Grid - 3 top + 3 bottom */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Projects Grid - Responsive */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
           {projectsData.map(
             ({
               id,
@@ -99,17 +99,16 @@ const Projects = () => {
                   href={link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`relative h-[320px] rounded-xl shadow-lg shadow-[#58a6ff]/30 overflow-hidden flex flex-col justify-end bg-cover bg-center ${hoverEffectClasses}`}
+                  className={`relative h-[280px] sm:h-[300px] md:h-[320px] rounded-xl shadow-lg shadow-[#58a6ff]/30 overflow-hidden flex flex-col justify-end bg-cover bg-center ${hoverEffectClasses}`}
                   style={{ backgroundImage: `url(${imageUrl})` }}
                 >
-                  <div className="bg-[#0d1117]/70 p-5 sm:p-6 flex flex-col justify-between h-full text-left">
-                    <h3 className="text-[#58a6ff] text-xl mb-2 font-semibold">
+                  <div className="bg-[#0d1117]/70 p-4 sm:p-5 md:p-6 flex flex-col justify-between h-full text-left">
+                    <h3 className="text-[#58a6ff] text-lg sm:text-xl md:text-xl mb-2 font-semibold">
                       {title}
                     </h3>
-                    <p className="text-[0.95rem] leading-relaxed flex-grow">
+                    <p className="text-[0.85rem] sm:text-[0.95rem] md:text-[0.95rem] leading-relaxed flex-grow">
                       {description}
                     </p>
-                    {/* Tech Icons with Bounce Animation */}
                     <div className="flex gap-3 mt-3 flex-wrap">
                       {tech &&
                         tech.map((t, i) => (
@@ -130,7 +129,7 @@ const Projects = () => {
               ) : (
                 <div
                   key={id}
-                  className={`relative h-[320px] rounded-xl overflow-hidden bg-black shadow-lg shadow-[#58a6ff]/30 ${hoverEffectClasses}`}
+                  className={`relative h-[280px] sm:h-[300px] md:h-[320px] rounded-xl overflow-hidden bg-black shadow-lg shadow-[#58a6ff]/30 ${hoverEffectClasses}`}
                 >
                   <video
                     src={videoUrl}
@@ -141,7 +140,7 @@ const Projects = () => {
                     className="w-full h-full object-cover block rounded-xl"
                   />
                   <div className="absolute inset-0 bg-[#0d1117]/60 flex flex-col justify-center items-center text-center p-4 text-[#c9d1d9]">
-                    <h3 className="text-[#58a6ff] text-xl mb-2 font-semibold">
+                    <h3 className="text-[#58a6ff] text-lg sm:text-xl md:text-xl mb-2 font-semibold">
                       {title}
                     </h3>
                     <p className="text-base m-0">{description}</p>

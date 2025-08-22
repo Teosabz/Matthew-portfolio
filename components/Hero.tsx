@@ -10,14 +10,14 @@ const Hero = () => {
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-[#0d1117]/70 z-0"></div>
 
-      <div className="relative z-10 max-w-xl sm:max-w-2xl md:max-w-3xl">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#58a6ff] mb-6">
+      <div className="relative z-10 max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#58a6ff] mb-6">
           Hi, I&#39;m Matthew Sabeta
         </h1>
 
         {/* Improved paragraphs */}
-        <p className="text-base sm:text-lg md:text-xl mb-6 leading-relaxed max-w-3xl mx-auto text-[#c9d1d9]/90">
-          I&#39;m a{" "}
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 leading-relaxed md:leading-relaxed lg:leading-loose max-w-3xl mx-auto text-[#c9d1d9]/90">
+          I&apos;m a{" "}
           <span className="text-[#58a6ff] font-semibold">
             Software Developer
           </span>{" "}
@@ -26,7 +26,7 @@ const Hero = () => {
           performant.
         </p>
 
-        <p className="text-base sm:text-lg md:text-xl mb-6 leading-relaxed max-w-3xl mx-auto text-[#c9d1d9]/90">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 leading-relaxed md:leading-relaxed lg:leading-loose max-w-3xl mx-auto text-[#c9d1d9]/90">
           I mainly work with{" "}
           <span className="text-[#61dafb] font-semibold">HTML</span>,{" "}
           <span className="text-[#f7df1e] font-semibold">JavaScript</span>,{" "}
@@ -40,24 +40,24 @@ const Hero = () => {
           <span className="text-[#f24e1e] font-semibold">Figma</span>.
         </p>
 
-        <p className="text-base sm:text-lg md:text-xl mb-8 leading-relaxed max-w-3xl mx-auto text-[#c9d1d9]/90">
-          I&#39;m open to{" "}
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 leading-relaxed md:leading-relaxed lg:leading-loose max-w-3xl mx-auto text-[#c9d1d9]/90">
+          I&apos;m open to{" "}
           <span className="text-[#58a6ff] font-semibold">internships</span> and{" "}
           <span className="text-[#58a6ff] font-semibold">freelance work</span> —
           feel free to reach out and collaborate on exciting projects!
         </p>
 
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
           <a
             href="#projects"
-            className="px-5 py-3 bg-[#58a6ff] text-[#0d1117] font-bold rounded-md hover:bg-[#3a75d1] transition-colors"
+            className="px-5 py-3 sm:px-6 sm:py-4 md:px-7 md:py-4 lg:px-8 lg:py-5 bg-[#58a6ff] text-[#0d1117] font-bold rounded-md hover:bg-[#3a75d1] transition-colors"
           >
             View My Projects
           </a>
           <a
             href="/Matthew-Sabeta-Resume.pdf"
             download="Matthew-Sabeta-Resume.pdf"
-            className="px-5 py-3 bg-[#58a6ff] text-[#0d1117] font-bold rounded-md hover:bg-[#3a75d1] transition-colors"
+            className="px-5 py-3 sm:px-6 sm:py-4 md:px-7 md:py-4 lg:px-8 lg:py-5 bg-[#58a6ff] text-[#0d1117] font-bold rounded-md hover:bg-[#3a75d1] transition-colors"
           >
             Download Resume
           </a>
