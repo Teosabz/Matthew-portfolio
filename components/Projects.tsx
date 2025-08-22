@@ -23,7 +23,7 @@ const projectsData = [
     description:
       "A folktale app built using Next.js, Tailwind CSS, and Node.js, featuring story browsing, filtering, and user interactions.",
     imageUrl: "/assets/w-o-y.png", // replace with actual cover image if you have one
-    link: "https://your-whispers-of-yore-link.vercel.app", // replace with the live URL
+    link: "https://whispers-of-yore.vercel.app/", // replace with the live URL
     type: "project",
     tech: [
       { icon: <FaReact />, color: "#61DAFB" },
