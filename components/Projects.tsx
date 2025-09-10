@@ -5,11 +5,11 @@ import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 const projectsData = [
   {
     id: 1,
-    title: "Tigzozo Media",
+    title: "NewsPulse ",
     description:
-      "A personal portfolio built with HTML, CSS and JavaScript. Fully responsive and clean UI.",
-    imageUrl: "/assets/tigzozo-media.jpg",
-    link: "https://teosabs.github.io/Tigzozo-media/",
+      "A modern news aggregator app that fetches articles from multiple sources, delivering real-time news in one place. Users can browse, search, and stay updated on trending topics with a clean, responsive interface.",
+    imageUrl: "/assets/NewsPulse.png",
+    link: "https://news-pulse-beta.vercel.app/",
     type: "project",
     tech: [
       { icon: <FaHtml5 />, color: "#E34F26" },
