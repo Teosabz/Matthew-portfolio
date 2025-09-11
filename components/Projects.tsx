@@ -49,6 +49,19 @@ const projectsData = [
   },
   {
     id: 4,
+    title: "FlickPick-movieverse",
+    description:
+      "FlickPick lets you discover movies, watch trailers, and save your favorites.",
+    imageUrl: "/assets/FlickPick.png",
+    link: "https://flickpick-movieverse.vercel.app/",
+    type: "project",
+    tech: [
+      { icon: <SiNextdotjs />, color: "#FFFFFF" },
+      { icon: <SiTailwindcss />, color: "#06B6D4" },
+    ],
+  },
+  {
+    id: 5,
     title: "Coming Soon",
     description: "More projects on the way!",
     videoUrl: "/assets/coming-soon.mp4",
