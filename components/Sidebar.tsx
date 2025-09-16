@@ -1,7 +1,7 @@
 // components/Sidebar.tsx
 import React, { useState, useEffect } from "react";
 
-const sections = ["hero", "about", "skills", "projects", "contact"];
+const sections = ["hero", "about", "skills", "projects", "contact", "footer"];
 
 const Sidebar = () => {
   const [active, setActive] = useState("hero");

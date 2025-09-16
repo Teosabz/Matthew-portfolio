@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const sections = ["hero", "about", "skills", "projects", "contact"];
+const sections = ["hero", "about", "skills", "projects", "contact", "footer"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

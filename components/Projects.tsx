@@ -62,20 +62,73 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "Coming Soon",
-    description: "More projects on the way!",
-    videoUrl: "/assets/coming-soon.mp4",
-    type: "comingSoon",
-  },
-  {
-    id: 5,
-    title: "Coming Soon",
-    description: "More projects on the way!",
-    videoUrl: "/assets/coming-soon.mp4",
-    type: "comingSoon",
+    title: "Picksy",
+    description:
+      "Picksy, A modern e-commerce product catalog that makes browsing, searching, and filtering products simple and enjoyable",
+    imageUrl: "/assets/Picksy.png",
+    link: "https://flickpick-movieverse.vercel.app/",
+    type: "project",
+    tech: [
+      { icon: <SiNextdotjs />, color: "#FFFFFF" },
+      { icon: <SiTailwindcss />, color: "#06B6D4" },
+    ],
   },
   {
     id: 6,
+    title: "StyleSphere",
+    description:
+      "StyleSphere, A fashion discovery and style inspiration web app ",
+    imageUrl: "/assets/SS.png",
+    link: "https://style-sphere-qjdeo2tnb-matthew-sabetas-projects.vercel.app/",
+    type: "project",
+    tech: [
+      { icon: <SiNextdotjs />, color: "#FFFFFF" },
+      { icon: <SiTailwindcss />, color: "#06B6D4" },
+    ],
+  },
+  {
+    id: 7,
+    title: "Elite Wheels",
+    description:
+      "Elite Wheels, is a luxury car discovery web app designed to showcase high-end and exotic vehicles",
+    imageUrl: "/assets/FlickPick.png",
+    link: "https://elite-wheels.vercel.app/",
+    type: "project",
+    tech: [
+      { icon: <SiNextdotjs />, color: "#FFFFFF" },
+      { icon: <SiTailwindcss />, color: "#06B6D4" },
+    ],
+  },
+  {
+    id: 8,
+    title: "Zen Escape",
+    description:
+      "Zen Escape is a luxury wellness & relaxation app that helps people find calming retreats, spas, and relaxation experiences worldwide",
+    imageUrl: "/assets/FlickPick.png",
+    link: "https://zen-escape.vercel.app/",
+    type: "project",
+    tech: [
+      { icon: <SiNextdotjs />, color: "#FFFFFF" },
+      { icon: <SiTailwindcss />, color: "#06B6D4" },
+    ],
+  },
+
+  {
+    id: 10,
+    title: "Coming Soon",
+    description: "More projects on the way!",
+    videoUrl: "/assets/coming-soon.mp4",
+    type: "comingSoon",
+  },
+  {
+    id: 11,
+    title: "Coming Soon",
+    description: "More projects on the way!",
+    videoUrl: "/assets/coming-soon.mp4",
+    type: "comingSoon",
+  },
+  {
+    id: 12,
     title: "Coming Soon",
     description: "More projects on the way!",
     videoUrl: "/assets/coming-soon.mp4",

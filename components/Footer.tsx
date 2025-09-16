@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaArrowUp,
-  FaHeart,
-} from "react-icons/fa";
-import { Sparkles } from "lucide-react";
+import { FaGithub, FaLinkedin, FaTwitter, FaArrowUp } from "react-icons/fa";
 
 interface Particle {
   id: number;
@@ -94,13 +87,6 @@ const Footer = () => {
 
       {/* Main content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-10 lg:py-14 flex flex-col items-center space-y-6">
-        <div className="flex items-center gap-2 text-sm opacity-80">
-          <span>Made with</span>
-          <FaHeart className="text-red-400 animate-pulse" />
-          <span>by</span>
-          <Sparkles className="w-4 h-4 text-[#58a6ff]" />
-        </div>
-
         <div className="flex gap-6">
           <a
             href="https://github.com/teosabz"
