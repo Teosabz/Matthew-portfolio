@@ -114,12 +114,33 @@ const projectsData = [
   },
 
   {
-    id: 10,
-    title: "Coming Soon",
-    description: "More projects on the way!",
-    videoUrl: "/assets/coming-soon.mp4",
-    type: "comingSoon",
+    id: 9,
+    title: "Cooksy",
+    description:
+      "Cooksy helps users turn whatever’s in their kitchen into delicious meals",
+    imageUrl: "/assets/Cooksy.png",
+    link: "https://zen-escape.vercel.app/",
+    type: "project",
+    tech: [
+      { icon: <SiNextdotjs />, color: "#FFFFFF" },
+      { icon: <SiTailwindcss />, color: "#06B6D4" },
+    ],
   },
+
+  {
+    id: 10,
+    title: "Zen Escape",
+    description:
+      "Zen Escape is a luxury wellness & relaxation app that helps people find calming retreats, spas, and relaxation experiences worldwide",
+    imageUrl: "/assets/FlickPick.png",
+    link: "https://zen-escape.vercel.app/",
+    type: "project",
+    tech: [
+      { icon: <SiNextdotjs />, color: "#FFFFFF" },
+      { icon: <SiTailwindcss />, color: "#06B6D4" },
+    ],
+  },
+
   {
     id: 11,
     title: "Coming Soon",
@@ -129,6 +150,13 @@ const projectsData = [
   },
   {
     id: 12,
+    title: "Coming Soon",
+    description: "More projects on the way!",
+    videoUrl: "/assets/coming-soon.mp4",
+    type: "comingSoon",
+  },
+  {
+    id: 13,
     title: "Coming Soon",
     description: "More projects on the way!",
     videoUrl: "/assets/coming-soon.mp4",
