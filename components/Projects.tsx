@@ -129,9 +129,9 @@ const projectsData = [
 
   {
     id: 10,
-    title: "Zen Escape",
+    title: "News pulse",
     description:
-      "Zen Escape is a luxury wellness & relaxation app that helps people find calming retreats, spas, and relaxation experiences worldwide",
+      "News Pulse is a sleek, modern news aggregation and trend-tracking app that curates stories from multiple sources and highlights what’s currently making waves. Unlike static news feeds, it gives users a live “pulse” of global and local conversations, blending credibility with trending relevance.",
     imageUrl: "/assets/FlickPick.png",
     link: "https://zen-escape.vercel.app/",
     type: "project",
