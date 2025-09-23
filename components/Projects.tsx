@@ -58,6 +58,7 @@ const projectsData = [
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
+      { icon: <FaNodeJs />, color: "#339933" },
     ],
   },
   {
@@ -71,6 +72,7 @@ const projectsData = [
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
+      { icon: <FaNodeJs />, color: "#339933" },
     ],
   },
   {
@@ -84,6 +86,7 @@ const projectsData = [
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
+      { icon: <FaNodeJs />, color: "#339933" },
     ],
   },
   {
@@ -97,6 +100,7 @@ const projectsData = [
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
+      { icon: <FaNodeJs />, color: "#339933" },
     ],
   },
   {
@@ -110,6 +114,7 @@ const projectsData = [
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
+      { icon: <FaNodeJs />, color: "#339933" },
     ],
   },
 
@@ -124,6 +129,7 @@ const projectsData = [
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
+      { icon: <FaNodeJs />, color: "#339933" },
     ],
   },
 
@@ -138,16 +144,25 @@ const projectsData = [
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
+      { icon: <FaNodeJs />, color: "#339933" },
     ],
   },
 
   {
     id: 11,
-    title: "Coming Soon",
-    description: "More projects on the way!",
-    videoUrl: "/assets/coming-soon.mp4",
-    type: "comingSoon",
+    title: "NewsPulse",
+    description:
+      "NewsPulse is a modern, responsive platform that delivers the latest headlines in a clean and engaging interface.",
+    imageUrl: "/assets/NewsPulse.png",
+    link: "https://news-pulse-58pt.vercel.app/",
+    type: "project",
+    tech: [
+      { icon: <SiNextdotjs />, color: "#FFFFFF" },
+      { icon: <SiTailwindcss />, color: "#06B6D4" },
+      { icon: <FaNodeJs />, color: "#339933" },
+    ],
   },
+
   {
     id: 12,
     title: "Coming Soon",
@@ -157,6 +172,13 @@ const projectsData = [
   },
   {
     id: 13,
+    title: "Coming Soon",
+    description: "More projects on the way!",
+    videoUrl: "/assets/coming-soon.mp4",
+    type: "comingSoon",
+  },
+  {
+    id: 14,
     title: "Coming Soon",
     description: "More projects on the way!",
     videoUrl: "/assets/coming-soon.mp4",
