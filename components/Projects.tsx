@@ -5,11 +5,11 @@ import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 const projectsData = [
   {
     id: 1,
-    title: "NewsPulse ",
+    title: "Tasteluxe ",
     description:
-      "A modern news aggregator app that fetches articles from multiple sources, delivering real-time news in one place. Users can browse, search, and stay updated on trending topics with a clean, responsive interface.",
-    imageUrl: "/assets/NewsPulse.png",
-    link: "https://news-pulse-beta.vercel.app/",
+      "TasteLuxe is a premium culinary app for food lovers, gourmets, and home chefs. It combines recipe discovery, restaurant insights, and personalized culinary experiences in a stylish, modern platform.",
+    imageUrl: "/assets/tl.png",
+    link: "https://play-hub-theta.vercel.app/",
     type: "project",
     tech: [
       { icon: <FaHtml5 />, color: "#E34F26" },
@@ -45,6 +45,7 @@ const projectsData = [
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
+      { icon: <FaReact />, color: "#61DAFB" },
     ],
   },
   {
@@ -52,13 +53,14 @@ const projectsData = [
     title: "FlickPick-movieverse",
     description:
       "FlickPick lets you discover movies, watch trailers, and save your favorites.",
-    imageUrl: "/assets/FlickPick.png",
+    imageUrl: "/assets/flick.png",
     link: "https://flickpick-movieverse.vercel.app/",
     type: "project",
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
       { icon: <FaNodeJs />, color: "#339933" },
+      { icon: <FaReact />, color: "#61DAFB" },
     ],
   },
   {
@@ -66,13 +68,14 @@ const projectsData = [
     title: "Picksy",
     description:
       "Picksy, A modern e-commerce product catalog that makes browsing, searching, and filtering products simple and enjoyable",
-    imageUrl: "/assets/Picksy.png",
+    imageUrl: "/assets/p.png",
     link: "https://flickpick-movieverse.vercel.app/",
     type: "project",
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
       { icon: <FaNodeJs />, color: "#339933" },
+      { icon: <FaReact />, color: "#61DAFB" },
     ],
   },
   {
@@ -80,13 +83,14 @@ const projectsData = [
     title: "StyleSphere",
     description:
       "StyleSphere, A fashion discovery and style inspiration web app ",
-    imageUrl: "/assets/SS.png",
+    imageUrl: "/assets/sty.png",
     link: "https://style-sphere-qjdeo2tnb-matthew-sabetas-projects.vercel.app/",
     type: "project",
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
       { icon: <FaNodeJs />, color: "#339933" },
+      { icon: <FaReact />, color: "#61DAFB" },
     ],
   },
   {
@@ -94,13 +98,14 @@ const projectsData = [
     title: "Elite Wheels",
     description:
       "Elite Wheels, is a luxury car discovery web app designed to showcase high-end and exotic vehicles",
-    imageUrl: "/assets/FlickPick.png",
+    imageUrl: "/assets/elite.png",
     link: "https://elite-wheels.vercel.app/",
     type: "project",
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
       { icon: <FaNodeJs />, color: "#339933" },
+      { icon: <FaReact />, color: "#61DAFB" },
     ],
   },
   {
@@ -108,13 +113,14 @@ const projectsData = [
     title: "Zen Escape",
     description:
       "Zen Escape is a luxury wellness & relaxation app that helps people find calming retreats, spas, and relaxation experiences worldwide",
-    imageUrl: "/assets/FlickPick.png",
+    imageUrl: "/assets/zen.png",
     link: "https://zen-escape.vercel.app/",
     type: "project",
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
       { icon: <FaNodeJs />, color: "#339933" },
+      { icon: <FaReact />, color: "#61DAFB" },
     ],
   },
 
@@ -123,28 +129,30 @@ const projectsData = [
     title: "Cooksy",
     description:
       "Cooksy helps users turn whatever’s in their kitchen into delicious meals",
-    imageUrl: "/assets/Cooksy.png",
+    imageUrl: "/assets/kuk.png",
     link: "https://zen-escape.vercel.app/",
     type: "project",
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
       { icon: <FaNodeJs />, color: "#339933" },
+      { icon: <FaReact />, color: "#61DAFB" },
     ],
   },
 
   {
     id: 10,
-    title: "News pulse",
+    title: "Playhub",
     description:
-      "News Pulse is a sleek, modern news aggregation and trend-tracking app that curates stories from multiple sources and highlights what’s currently making waves. Unlike static news feeds, it gives users a live “pulse” of global and local conversations, blending credibility with trending relevance.",
-    imageUrl: "/assets/FlickPick.png",
-    link: "https://zen-escape.vercel.app/",
+      "PlayHub is a central hub for gamers, offering discovery, social interaction, and tracking across all types of games.",
+    imageUrl: "/assets/playhub.png",
+    link: "https://play-hub-theta.vercel.app/",
     type: "project",
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
       { icon: <FaNodeJs />, color: "#339933" },
+      { icon: <FaReact />, color: "#61DAFB" },
     ],
   },
 
@@ -153,13 +161,14 @@ const projectsData = [
     title: "NewsPulse",
     description:
       "NewsPulse is a modern, responsive platform that delivers the latest headlines in a clean and engaging interface.",
-    imageUrl: "/assets/NewsPulse.png",
+    imageUrl: "/assets/news.png",
     link: "https://news-pulse-58pt.vercel.app/",
     type: "project",
     tech: [
       { icon: <SiNextdotjs />, color: "#FFFFFF" },
       { icon: <SiTailwindcss />, color: "#06B6D4" },
       { icon: <FaNodeJs />, color: "#339933" },
+      { icon: <FaReact />, color: "#61DAFB" },
     ],
   },
 
