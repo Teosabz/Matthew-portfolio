@@ -255,7 +255,7 @@ const Projects = () => {
                     src={videoUrl}
                     autoPlay
                     loop
-                    muted
+                    muted={true}
                     playsInline
                     className="w-full h-full object-cover block rounded-xl"
                   />
