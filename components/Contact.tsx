@@ -1,7 +1,38 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
+  const contacts = [
+    {
+      icon: <FaEnvelope />,
+      label: "Email",
+      value: "matthewsabeta0@gmail.com",
+      link: "mailto:matthewsabeta0@gmail.com",
+      color: "#f97316",
+    },
+    {
+      icon: <FaGithub />,
+      label: "GitHub",
+      value: "github.com/teosabz",
+      link: "https://github.com/Teosabz",
+      color: "#58a6ff",
+    },
+    {
+      icon: <FaLinkedin />,
+      label: "LinkedIn",
+      value: "linkedin.com/in/teosabz",
+      link: "http://linkedin.com/in/matthew-sabeta",
+      color: "#0e76a8",
+    },
+    {
+      icon: <FaWhatsapp />,
+      label: "WhatsApp",
+      value: "+263788933924",
+      link: "https://wa.me/+263788933924",
+      color: "#25D366",
+    },
+  ];
+
   return (
     <section
       id="contact"
@@ -27,14 +58,15 @@ const Contact = () => {
           className="text-base sm:text-lg md:text-lg lg:text-xl mb-10 leading-relaxed animate-fade-in-up"
           style={{ animationDelay: "0.2s" }}
         >
-          I&apos;m always open to new opportunities and collaborations. Feel
-          free to reach out using the form below or via GitHub.
+          I&apos;m always open to new opportunities and collaborations. Choose
+          the way that works best for you.
         </p>
 
+        {/* Contact Form */}
         <form
           action="https://formspree.io/f/mayzlzno"
           method="POST"
-          className="space-y-6 text-left animate-fade-in-up"
+          className="space-y-6 text-left animate-fade-in-up mb-12"
           style={{ animationDelay: "0.4s" }}
         >
           <input
@@ -66,19 +98,23 @@ const Contact = () => {
           </button>
         </form>
 
-        <div
-          className="mt-10 animate-fade-in-up"
-          style={{ animationDelay: "0.6s" }}
-        >
-          <a
-            href="https://github.com/teosabz"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-[#58a6ff] hover:text-white text-lg sm:text-xl transition-colors"
-          >
-            <FaGithub className="text-2xl sm:text-3xl animate-bounce-slow" />
-            github.com/teosabz
-          </a>
+        {/* Other Contact Options */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {contacts.map((contact, idx) => (
+            <a
+              key={idx}
+              href={contact.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center justify-center p-6 rounded-xl bg-[#0d1117]/60 border border-[#58a6ff]/20 hover:bg-[#58a6ff]/10 transition-all shadow-md hover:shadow-lg"
+            >
+              <span className="text-4xl mb-3" style={{ color: contact.color }}>
+                {contact.icon}
+              </span>
+              <h4 className="font-semibold text-lg">{contact.label}</h4>
+              <p className="text-sm truncate max-w-[150px]">{contact.value}</p>
+            </a>
+          ))}
         </div>
       </div>
 
